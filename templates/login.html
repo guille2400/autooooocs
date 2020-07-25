@@ -1,0 +1,30 @@
+{% extends "default.html" %}
+{% block content %}
+ <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+<link href='../static/css/login.css' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<header class="masthead bg-secondary text-black text-center">
+  </header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="login.js"></script>
+
+<div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-form">
+    <h3>Username:</h3>
+    <input type="text" name="username" id="username" placeholder="Username"/><br>
+    <h3>Password:</h3>
+    <input type="password" name="password" id="password" placeholder="Password"/>
+    <br>
+    <input type="button" value="Login"  class="login-button" onclick="login()"/>
+    <br>
+    <button type="button" value="Login" class="register-button" onclick="redirigir()">Registrarse</button>
+    <br>
+  </div>
+</div>
+
+
+{% endblock content %}

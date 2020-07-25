@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Auto CS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="default.js"></script>
+
+</head>
+<body >
+    <!--Aqui Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img height="60" class="d-block w-35" src="{{url_for('static',filename='img/logo.png')}}" alt="First slide">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/static/index.html" >Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/static/catalogo.html" >Productos</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="/static/contactanos.html" >Contactanos</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <div><a href="{{url_for('logout')}}">Logout</a></div>
+                  <div>||</div>
+                 <div><a id="referencia" href="/static/login.html">Login</a></div>
+              </form>
+            </div>
+          </nav>
+
+{% block content %}
+
+{% endblock content %}
+
+
+
